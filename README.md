@@ -1,25 +1,19 @@
-# employee-list-ts
+# Реализовать редактируемый список сотрудников.
 
-This template should help get you started developing with Vue 3 in Vite.
+## Необходимая функциональность
 
-## Recommended IDE Setup
+### Страница должна содержать :
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+- форму ввода/редактирования данных (в отдельном окне)
+- список (таблицу) с уже введёнными сотрудниками с возможностью редактирования.
+  
+Параметры сотрудника: имя, фамилия, стаж, возраст, адрес.
 
-## Type Support for `.vue` Imports in TS
+При выполнении тестового задания необходимо применить концепцию MVC и модульный подход к организации кода.
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+Сопроводить код подробным описанием.
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
-
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+Использовать Framework Vue JS. Можно использовать NUXT.
 
 ## Project Setup
 
