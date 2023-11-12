@@ -4,7 +4,8 @@ import HomeView from '@/views/HomeView.vue'
 export enum Routes {
   HOME = '/',
   ADD = '/add',
-  EDIT = '/employee/:id'
+  EDIT = '/employee/:id',
+  NOT_FOUND = '/:pathMatch(.*)'
 }
 
 const router = createRouter({
@@ -24,6 +25,11 @@ const router = createRouter({
       path: Routes.EDIT,
       name: 'edit',
       component: () => import('@/views/EditView.vue')
+    },
+    {
+      path: Routes.NOT_FOUND,
+      name: 'not found',
+      component: () => import('@/views/NotFoundVuew.vue')
     }
   ]
 })
