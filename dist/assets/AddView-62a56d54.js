@@ -1,0 +1,1 @@
+import{E as e}from"./EmployeeForm-7a1b51c1.js";import{d as o,o as a,c as t,a as r,F as s,b as n}from"./index-86803660.js";const c=n("h1",null,"Добавить сотрудника",-1),i=o({__name:"AddView",setup(m){return(_,l)=>(a(),t(s,null,[c,r(e)],64))}});export{i as default};

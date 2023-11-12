@@ -1,0 +1,1 @@
+import{E as t}from"./EmployeeForm-7a1b51c1.js";import{d as a,u as s,g as n,o as r,c as l,a as m,e as c,F as p,b as u}from"./index-86803660.js";const _=u("h1",null,"Изменить данные",-1),h=a({__name:"EditView",setup(d){const e=s().params.id,o=n(e);return(f,y)=>(r(),l(p,null,[_,m(t,{employee:c(o)},null,8,["employee"])],64))}});export{h as default};
