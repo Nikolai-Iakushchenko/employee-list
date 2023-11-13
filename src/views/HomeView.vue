@@ -1,7 +1,7 @@
 <script lang="ts" setup>
-import {employeeList} from '../composables/employeeListStore'
-import {Routes} from '@/router'
-import EmployeeCard from "@/components/EmployeeCard.vue";
+import { employeeList } from '../composables/employeeListStore'
+import { Routes } from '@/router'
+import EmployeeCard from '@/components/EmployeeCard.vue'
 </script>
 
 <template>
@@ -12,22 +12,25 @@ import EmployeeCard from "@/components/EmployeeCard.vue";
     </button>
     <table v-if="employeeList.length">
       <thead>
-      <tr>
-        <th>Имя</th>
-        <th>Фамилия</th>
-        <th>Стаж</th>
-        <th>Возраст</th>
-        <th>Адрес</th>
-        <th></th>
-      </tr>
+        <tr>
+          <th>Имя</th>
+          <th>Фамилия</th>
+          <th>Стаж</th>
+          <th>Возраст</th>
+          <th>Адрес</th>
+          <th></th>
+        </tr>
       </thead>
-      <EmployeeCard v-for="employee in employeeList" :key="employee.id" :employee="employee"/>
+      <EmployeeCard v-for="employee in employeeList" :key="employee.id" :employee="employee" />
     </table>
   </main>
 </template>
 
 <style module>
 table {
+  table-layout: fixed;
+  width: 100%;
+  word-wrap: break-word;
   border: 1px solid black;
   margin-top: 10px;
   border-collapse: collapse;
