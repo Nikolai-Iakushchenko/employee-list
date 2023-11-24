@@ -6,4 +6,8 @@ import { RouterView } from 'vue-router'
   <RouterView />
 </template>
 
-<style module></style>
+<style>
+* {
+  text-transform: capitalize;
+}
+</style>
