@@ -14,7 +14,7 @@ const formdata: Employee = {
   lastName: props.employee?.lastName || '',
   experience: props.employee?.experience || '',
   age: props.employee?.age || '',
-  address: props.employee?.address || ''
+  address: props.employee?.address || '',
 }
 
 const submit = () => {
@@ -29,14 +29,19 @@ const submit = () => {
 
 <template>
   <form :class="$style.form" @submit.prevent="submit">
-    <input v-model="formdata.name" placeholder="Имя" required type="text" />
-    <input v-model="formdata.lastName" placeholder="Фамилия" required type="text" />
-    <input v-model="formdata.experience" placeholder="Стаж" required type="number" />
-    <input v-model="formdata.age" placeholder="Возраст" required type="number" />
-    <textarea v-model="formdata.address" placeholder="Адрес" required />
+    <input v-model="formdata.name" :placeholder="$t('message.name')" required type="text" />
+    <input v-model="formdata.lastName" :placeholder="$t('message.lastName')" required type="text" />
+    <input
+      v-model="formdata.experience"
+      :placeholder="$t('message.experience')"
+      required
+      type="number"
+    />
+    <input v-model="formdata.age" :placeholder="$t('message.age')" required type="number" />
+    <textarea v-model="formdata.address" :placeholder="$t('message.address')" required />
     <footer>
-      <button :class="$style['add-btn']">Сохранить</button>
-      <button @click="$router.push(Routes.HOME)">Отмена</button>
+      <button :class="$style['add-btn']">{{ $t('message.save') }}</button>
+      <button @click="$router.push(Routes.HOME)">{{ $t('message.cancel') }}</button>
     </footer>
   </form>
 </template>

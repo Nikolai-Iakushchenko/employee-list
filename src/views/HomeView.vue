@@ -6,18 +6,18 @@ import EmployeeCard from '@/components/EmployeeCard.vue'
 
 <template>
   <main>
-    <h1>Список сотрудников</h1>
+    <h1>{{ $t('message.employeeList') }}</h1>
     <button :class="$style['add-btn']" @click="$router.push(Routes.ADD)">
-      Добавить сотрудника
+      {{ $t('message.addEmployee') }}
     </button>
     <table v-if="employeeList.length">
       <thead>
         <tr>
-          <th>Имя</th>
-          <th>Фамилия</th>
-          <th>Стаж</th>
-          <th>Возраст</th>
-          <th>Адрес</th>
+          <th>{{ $t('message.name') }}</th>
+          <th>{{ $t('message.lastName') }}</th>
+          <th>{{ $t('message.experience') }}</th>
+          <th>{{ $t('message.age') }}</th>
+          <th>{{ $t('message.address') }}</th>
           <th></th>
         </tr>
       </thead>

@@ -1,4 +1,4 @@
-const messages = {
+export const messages = {
   en: {
     message: {
       addEmployee: 'add employee',
