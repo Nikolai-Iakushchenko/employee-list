@@ -1,23 +1,20 @@
-# Реализовать редактируемый список сотрудников
+# Editable employee list
 
-Cсылка на сайт с работающим вариантом тестового задания
-
+Deployed here
 https://fanciful-daffodil-ef2e33.netlify.app/
 
-## Необходимая функциональность
+## Features
 
-### Страница должна содержать :
+### The page should have:
 
-- форму ввода/редактирования данных (в отдельном окне)
-- список (таблицу) с уже введёнными сотрудниками с возможностью редактирования.
+- enter/edit data form (in a separate window)
+- list (table) of employees with ability to edit the data
 
-Параметры сотрудника: имя, фамилия, стаж, возраст, адрес.
+Empoyee's parameters: first name, last name, experience, age, address.
 
-При выполнении тестового задания необходимо применить концепцию MVC и модульный подход к организации кода.
+Code is organized in modules.
 
-Сопроводить код подробным описанием.
-
-Использовать Framework Vue JS. Можно использовать NUXT.
+Built using VueJS. 
 
 ## Project Setup
 
