@@ -1,8 +1,5 @@
 # Editable employee list
 
-Deployed here
-https://fanciful-daffodil-ef2e33.netlify.app/
-
 ## Features
 
 ### The page should have:
